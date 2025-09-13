@@ -80,7 +80,7 @@ We welcome contributions! To contribute:
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ## 👤 Author
-- **Developed by**: [Your Name]  
+- **Developed by**: [Khalil Amamri]  
 - **GitHub**: [yourusername](https://github.com/yourusername)
 
 ## 🙌 Acknowledgments
