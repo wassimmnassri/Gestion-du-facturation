@@ -81,7 +81,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 👤 Author
 - **Developed by**: [Khalil Amamri]  
-- **GitHub**: [yourusername](https://github.com/yourusername)
+- **GitHub**: [KhalilAmamri](https://github.com/KhalilAmamri)
 
 ## 🙌 Acknowledgments
 - Inspired by .NET Framework community resources.
