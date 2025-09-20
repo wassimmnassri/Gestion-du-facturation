@@ -73,14 +73,14 @@ Before running the project, make sure you have the following installed:
 1. Open `main.cs` or the startup form in Visual Studio.  
 2. Press **F5** to build and run the project.  
 
----
+```
 
 ## 📂 Project Structure
 InvoiceManagement/
 ├── Database/
-│   └── database.sql # SQL script to create the database and tables
+│ └── database.sql # SQL script to create the database and tables
 ├── images/
-│   └── database_diagram.png # Database schema diagram
+│ └── database_diagram.png # Database schema diagram
 ├── FormGestionFactures.cs # Invoice management form
 ├── FormGestionFactures.Designer.cs
 ├── FormGestionFactures.resx
@@ -92,6 +92,7 @@ InvoiceManagement/
 ├── .gitignore # Git ignore file
 └── README.md # This file
 
+```
 ---
 
 ## 🤝 Contributing
