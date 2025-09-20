@@ -5,6 +5,10 @@
 ## 🚀 Overview
 This project showcases a robust solution for managing invoices, including features for adding, viewing, and editing invoice details, along with user authentication and management capabilities.
 
+## 📊 Database Diagram
+Below is a visual representation of the database schema:
+![Database Diagram](images/database_diagram.png)
+
 ## ✨ Features
 - 📝 **Invoice Creation**: Easily create and edit invoices with a user-friendly interface.
 - 👤 **User Management**: Add, view, and manage users with secure access.
@@ -28,35 +32,42 @@ This project showcases a robust solution for managing invoices, including featur
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/InvoiceManagement.git
+   git clone https://github.com/KhalilAmamri/InvoiceManagement.git
    cd InvoiceManagement
-   ```
-2. Open the project in Visual Studio.
-3. Configure the database connection (update connection string in `connect_db.cs` if applicable).
-4. Build and run the solution.
 
-### Database Setup
-- Create a new database in SQL Server (e.g., `InvoiceDB`).
-- Execute the following SQL script to create a basic table:
-  ```sql
-  CREATE TABLE Invoices (
-      InvoiceID INT PRIMARY KEY IDENTITY,
-      InvoiceNumber VARCHAR(50),
-      ClientName VARCHAR(100),
-      Amount DECIMAL(10, 2),
-      IssueDate DATE
-  );
-  ```
-- Update the connection string in your code to point to this database.
+Open the project in Visual Studio.
+Configure the database connection (update connection string in connect_db.cs if applicable).
+Build and run the solution.
 
-### Running the Application
-- Open `main.cs` or the startup form in Visual Studio.
-- Press F5 to build and run.
+Database Setup
 
-## 📂 Project Structure
-```
-InvoiceManagement/
-├── FormGestionFactures.cs      # Invoice management form
+Install SQL Server (e.g., SQL Server Express) and SQL Server Management Studio (SSMS).
+Open SSMS and connect to your SQL Server instance (e.g., .\SQLEXPRESS).
+Run the SQL script located in Database/database.sql to create the database and tables:
+
+In SSMS, open Database/database.sql and click Execute.
+Or, use the command line:
+bashsqlcmd -S .\SQLEXPRESS -i Database/database.sql
+
+
+
+Update the connection string in connect_db.cs to point to your database. Example:
+csharpstring connectionString = "Data Source=.\SQLEXPRESS;Initial Catalog=DB_GestionFacture;Integrated Security=True";
+
+Note: Adjust the file paths in the script (e.g., FILENAME for .mdf and .ldf) to match your SQL Server data directory if needed.
+
+Running the Application
+
+Open main.cs or the startup form in Visual Studio.
+Press F5 to build and run.
+
+📂 Project Structure
+textInvoiceManagement/
+├── Database/
+│   └── database.sql           # SQL script to create the database and tables
+├── images/
+│   └── database_diagram.png   # Database schema diagram
+├── FormGestionFactures.cs     # Invoice management form
 ├── FormGestionFactures.Designer.cs
 ├── FormGestionFactures.resx
 ├── FormLogin.cs               # Login form
@@ -66,23 +77,23 @@ InvoiceManagement/
 ├── main.cs                    # Application entry point
 ├── .gitignore                 # Git ignore file
 └── README.md                  # This file
-```
-
-## 🤝 Contributing
+🤝 Contributing
 We welcome contributions! To contribute:
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feature/new-feature`.
-3. Commit your changes: `git commit -m "Add new feature"`.
-4. Push to the branch: `git push origin feature/new-feature`.
-5. Open a Pull Request.
 
-## 📄 License
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+Fork the repository.
+Create a feature branch: git checkout -b feature/new-feature.
+Commit your changes: git commit -m "Add new feature".
+Push to the branch: git push origin feature/new-feature.
+Open a Pull Request.
 
-## 👤 Author
-- **Developed by**: [Khalil Amamri]  
-- **GitHub**: [KhalilAmamri](https://github.com/KhalilAmamri)
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+👤 Author
 
-## 🙌 Acknowledgments
-- Inspired by .NET Framework community resources.
-- Thanks to all contributors and users!
+Developed by: [Khalil Amamri]
+GitHub: KhalilAmamri
+
+🙌 Acknowledgments
+
+Inspired by .NET Framework community resources.
+Thanks to all contributors and users!
