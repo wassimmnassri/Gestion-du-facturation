@@ -6,7 +6,7 @@ namespace GestionFacture
     class Tools
     {
         // Connection string to connect to the database
-        public string ConnectionString = @"Data Source=LAPTOP-ODCPSS87;Initial Catalog=DB_GestionFacture;Integrated Security=True;Trust Server Certificate=True;";
+        public string ConnectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=DB_GestionFacture;Integrated Security=True;Trust Server Certificate=True;";
 
         // Method to execute a non-query SQL command (e.g., INSERT, UPDATE, DELETE)
         public void Execution_Query(string query, Dictionary<string, object>? parameters = null)
